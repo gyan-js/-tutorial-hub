@@ -1,0 +1,36 @@
+.menu {
+  /* add correct code to place the menu correctly.*/
+
+  background-color: black;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: white;
+}
+body {
+  background: linear-gradient( to top, #ffc0cb, #00ffff);  
+}
+.grid {
+ 
+  /* add correct code to place the grid elements 
+  one beside the other equally.   */
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  flex-direction: row;
+}
+
+.grid img {
+  border: 2px solid black;
+  border-radius: 50px;
+  flex-direction: row;
+ 
+
+  
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
