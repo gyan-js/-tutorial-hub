@@ -14,12 +14,17 @@ body {
  
   /* add correct code to place the grid elements 
   one beside the other equally.   */
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   font-family: sans-serif;
   flex-direction: row;
+  border: 2px solid black;
+  border-radius: 50px;
+  
 }
+
+
 
 .grid img {
   border: 2px solid black;
@@ -30,7 +35,20 @@ body {
   
 }
 
+.grid img:hover{
+  transform: scale(0.9);
+  filter: hue-rotate(360de);
+  background: -webkit-linear-gradient(#0d5464, #e5ff00, #4eeb97, #ff0000);
+  animation: animate 5s linear infinite;
+}
+
 .menu{
   display: flex;
   justify-content: space-between;
+}
+
+@keyframes animate  {
+  100%{
+      filter: hue-rotate(360deg);
+  }
 }
